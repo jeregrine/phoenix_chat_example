@@ -40,5 +40,9 @@
 
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script src="<%= static_path(@conn, "/js/elm.js") %>"></script>
+    <script>
+      Elm.Main.embed(document.getElementById("app"))
+    </script>
   </body>
 </html>
